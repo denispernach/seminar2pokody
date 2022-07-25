@@ -3,9 +3,15 @@
 
 Console.WriteLine("Введите трехзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
-int numberA = number / 100;
-int numberB = number / 10 % 10;
-int numberC = number % 10;
-int result = numberB;
-Console.WriteLine($"{result}");
+if(number<1000)
+{
+    Console.WriteLine($"{number / 10 % 10}");
+}
+else
+{
+    Console.WriteLine("Вы ввели не трехзначное число");
+}
+
+
+
 
